@@ -243,7 +243,8 @@ Para solucionar este inconveniente se realizó el siguiente procedimiento:
    git flow hotfix finish start-hotfix
 
 Este proceso permitió integrar la corrección tanto en la rama master como en develop, manteniendo el flujo de trabajo organizado.
-
+img/error-hotfix.png
+![arreglo hotfix](img/error-hotfix.png)
 
 ---
 
