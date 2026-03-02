@@ -221,6 +221,30 @@ De esta manera, cuando Git solicite escribir un mensaje, se abrirá un editor m�
 img/config-editor.png
 ![Configuración del editor](img/config-editor.png)
 
+## 9. Corrección realizada mediante Hotfix
+
+Durante la revisión del proyecto se identificó un error tipográfico en el archivo README.md, el cual afectaba la presentación correcta del contenido.
+
+Para solucionar este inconveniente se realizó el siguiente procedimiento:
+
+1. Se creó una rama hotfix basada en master:
+
+   git flow hotfix start start-hotfix
+
+2. Se corrigió el error encontrado en el documento.
+
+3. Se guardaron los cambios y se realizó el commit correspondiente:
+
+   git add .
+   git commit -m "Corrijo error tipográfico en README"
+
+4. Se finalizó el hotfix con el siguiente comando:
+
+   git flow hotfix finish start-hotfix
+
+Este proceso permitió integrar la corrección tanto en la rama master como en develop, manteniendo el flujo de trabajo organizado.
+
+
 ---
 
 ## 9. Resultado final
@@ -233,5 +257,6 @@ Después de aplicar todas las soluciones:
 * Se creó y finalizó la release 1.0.0.
 * Se generó correctamente el tag 1.0.0.
 * Se solucionó el problema del editor.
+* se soluciono el problema mediante hotfix 
 
 El flujo de trabajo con Git Flow quedó funcionando correctamente y el proyecto quedó versionado de manera organizada.
